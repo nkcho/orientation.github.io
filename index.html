@@ -1,0 +1,130 @@
+<html>
+  <head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientation</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+
+
+<style>
+.checkbox{
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #24eb3c;
+	margin-bottom: 5px;
+}
+
+.side-nav{
+
+
+}
+.b{
+	border: 2px solid green;
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	/*justify-content: space-between ;*/
+}
+.container div{
+	padding: 5px;
+	
+}
+
+.block{
+	boder: 2px solid;
+	background-color: grey;
+	border-radius: 5px;
+	color: white;
+	margin: 5px 0;
+}
+</style>
+
+<div class="container ">
+	<div class="row">
+	
+		<div class="col-sm-4">
+			<div id="side-nav" class="side-nav">
+				<h3>Miya Academy</h3>
+				<div class="checkbox">
+					<input type="checkbox" class="check" value="Maths" >Maths
+				</div>
+
+				<div class="checkbox">
+					<input type="checkbox" class="check" value="Bio" >Bio
+				</div>
+
+				<div class="checkbox">
+					<input type="checkbox" class="check" value="Geo" >Geo
+				</div>
+				
+				<div class="checkbox">
+					<input type="checkbox" class="check" value="Chem" >Chem
+				</div>
+
+				<div class="checkbox">
+					<input type="checkbox" class="check" value="Eng" >Eng
+				</div>
+
+				<div class="checkbox">
+					<input type="checkbox" class="check" value="Phy" >Phy
+				</div>
+				
+				<div class="checkbox">
+					<input type="checkbox" class="check" value="Phi" >Phi
+				</div>
+			</div>
+		</div>
+	
+		<div class="col-sm-8">
+			<div id="result">
+
+				<h3>Results</h3>
+				<div class="subjs-div"></div>
+				<div class="career-div"></div>
+				<div class="career-result"></div>
+		</div>
+	</div>
+	
+	
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+	const careers = [
+	{career: 'Medical Doctor',
+	 subjs: 'Bio, Chem, Phy',
+	 institution: 'Faculty of Health Sciences'
+	},
+	{career: 'Agriculture', 
+	 subjs: 'Maths, Chem, Phy',
+	 institution: 'Faculty of Agricultural Sciences'
+	},
+	{career: 'Computer Sciences', 
+	 subjs: 'Maths, Phy, Any',
+	 institution: 'Faculty of Computer Sciences'
+	},
+	{career: 'Biochemistry', 
+	 subjs: 'Bio, Chem, Phy',
+	 institution: 'Faculty of Biochemistry'
+	},
+	{career: 'Biological Sciences', 
+	 subjs: 'Bio, Chem, Maths, Phy',
+	 institution: 'Faculty of Biological Sciences'
+	},
+	{career: 'Nursing',
+	 subjs: 'Bio, Chem, Phy',
+	 institution: 'Faculty of Nursing Sciences'
+	},
+	{career: 'Nursing', 
+	 subjs: 'Bio, Eng, Phi',
+	 institution: 'Faculty of Nursing Sciences'
+	 }
+	];
+	//$('#result .career-div').html('Nino');
+	
+	const _0x5cd4=['length','append','#result\x20.career-div','html','\x0a\x09\x09\x09\x09<hr>\x0a\x09\x09\x09\x09Institution:\x20','each','val','click','<div\x20class=\x22\x22><h5>No\x20Data</h5></div>','\x0a\x09\x09\x09\x09</div>','.check','#side-nav\x20input:checked','subjs','career','filter','</span>','#result\x20.career-result','institution','Subjects:\x20<span\x20class=\x22checkbox-selected\x22>','log'];(function(_0x2e5db6,_0x5cd407){const _0x459093=function(_0x3f863a){while(--_0x3f863a){_0x2e5db6['push'](_0x2e5db6['shift']());}};_0x459093(++_0x5cd407);}(_0x5cd4,0x126));const _0x4590=function(_0x2e5db6,_0x5cd407){_0x2e5db6=_0x2e5db6-0x0;let _0x459093=_0x5cd4[_0x2e5db6];return _0x459093;};$(_0x4590('0x10'))['on'](_0x4590('0xd'),function(){$val=$(this)[_0x4590('0xc')]();checked();});checked();function checked(){let _0x17f120=[];$(_0x4590('0x11'))[_0x4590('0xb')](function(){_0x17f120['push']($(this)[_0x4590('0xc')]());});let _0x52689c=getCareerArr(_0x17f120,careers);$('#result\x20.subjs-div')[_0x4590('0x9')](_0x4590('0x4')+_0x17f120+_0x4590('0x1'));$('#result\x20.career-div')[_0x4590('0x9')](dom(_0x52689c));}function dom(_0x376100){$dom=$(_0x4590('0x8'));console[_0x4590('0x5')]({'res':_0x376100});_0x376100[_0x4590('0x6')]==0x0?$(_0x4590('0x2'))['html'](_0x4590('0xe')):$(_0x4590('0x2'))[_0x4590('0x9')]('');$(_0x4590('0x8'))[_0x4590('0x9')]('');for(let _0x566396=0x0;_0x566396<_0x376100[_0x4590('0x6')];_0x566396++){console[_0x4590('0x5')]({'res':_0x376100});$dom[_0x4590('0x7')]('<div\x20class=\x22block\x22>\x0a\x09\x09\x09\x09Career:\x20'+_0x376100[_0x566396][_0x4590('0x13')]+_0x4590('0xa')+_0x376100[_0x566396][_0x4590('0x3')]+_0x4590('0xf'));}}function getCareerArr(_0x328d89,_0x305608){for(let _0x42d09b=0x0;_0x42d09b<_0x328d89[_0x4590('0x6')];_0x42d09b++){_0x305608=_0x305608[_0x4590('0x0')](_0x541761=>_0x541761[_0x4590('0x12')]['indexOf'](_0x328d89[_0x42d09b])>-0x1);}return _0x305608;}
+	
+</script>
